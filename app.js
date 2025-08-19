@@ -1,9 +1,7 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = [];
 
-// Función para agregar amigos
-document.getElementById('addFriendButton').addEventListener('click', function() {
-    const inputField = document.getElementById('friendInput');
+function agregarAmigo() {
+    const inputField = document.getElementById('amigo');
     const friendName = inputField.value.trim();
 
     if (friendName === '') {
@@ -15,4 +13,16 @@ document.getElementById('addFriendButton').addEventListener('click', function() 
     inputField.value = '';
 
     console.log('Lista de amigos actualizada:', amigos);
-});
+    actualizarLista();
+}
+
+function actualizarLista() {
+    const lista = document.getElementById('listaAmigos');
+    lista.innerHTML = '';
+
+    for (let i = 0; i < amigos.length; i++) {
+        const item = document.createElement('li');
+        item.textContent = amigos[i];
+        lista.appendChild(item);
+    }
+}
