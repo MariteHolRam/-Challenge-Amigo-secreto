@@ -1,7 +1,7 @@
 # Amigo Secreto App
 
 Una aplicación web interactiva para realizar sorteos de amigos secretos de manera simple y divertida.
-http://127.0.0.1:5500/challenge-amigo-secreto_esp-main/index.html
+https://challenge-amigo-secreto-three-ebon.vercel.app/
 
 ## Características
 
